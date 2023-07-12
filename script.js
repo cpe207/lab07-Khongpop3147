@@ -46,12 +46,16 @@ submitBtn.onclick = () => {
       emailInput.classList.add("is-invalid");
       
     }
-  if(passwordInput.value === ""){
-    passwordInput.classList.add("is-invalid");
+  if(passwordInput.value.length >= 6){
+    passwordInput.classList.add("is-valid");
+    isPasswordOk = true;
       }else {
-        passwordInput.classList.add("is-valid");
-        isPasswordOk = true;
-      }       
+        passwordInput.classList.add("is-invalid");
+        
+      }
+  if(isPasswordOk && isLastNameOk && isFirstNameOk && isEmailOk === true){
+    alert ("Registered successfully")
+  }       
         }
 
 
