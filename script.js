@@ -56,7 +56,7 @@ submitBtn.onclick = () => {
   if(isPasswordOk && isLastNameOk && isFirstNameOk && isEmailOk === true){
     alert ("Registered successfully")
   }       
-        }
+        }//
 
 
 
